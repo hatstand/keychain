@@ -1,6 +1,8 @@
 #ifndef MAC_KEYCHAIN_H
 #define MAC_KEYCHAIN_H
 
+#include "keychain.h"
+
 class MacKeychain : public Keychain {
 public:
 	virtual ~MacKeychain() {}

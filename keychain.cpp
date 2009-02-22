@@ -4,15 +4,14 @@
 
 #ifdef Q_OS_DARWIN
 #include "mac_keychain.h"
-#endif
-
+#elif Q_OS_UNIX
 #ifndef NO_KWALLET
 #include "kwallet_keychain.h"
 #endif
-
 #ifndef NO_GNOME_KEYRING
 #include "gnome_keychain.h"
 #endif
+#endif // Q_OS_UNIX
 
 const QString Keychain::kServiceName = "Purplehatstands";
 

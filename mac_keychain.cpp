@@ -2,6 +2,8 @@
 
 #include <Security/Security.h>
 
+const QString MacKeychain::kImplementationName = "Mac Keychain";
+
 bool MacKeychain::isAvailable() {
 	return true;
 }
