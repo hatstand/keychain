@@ -4,7 +4,7 @@
 
 #ifdef Q_OS_DARWIN
 #include "mac_keychain.h"
-#elif Q_OS_UNIX
+#elif defined(Q_OS_UNIX)
 #ifndef NO_KWALLET
 #include "kwallet_keychain.h"
 #endif
